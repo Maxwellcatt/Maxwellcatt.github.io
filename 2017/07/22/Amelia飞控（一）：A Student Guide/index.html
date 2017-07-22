@@ -6,14 +6,26 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | 林中麦客的Notebook</title>
+  <title>Amelia飞控（一）：A Student Guide | 林中麦客的Notebook</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="林中麦客的Notebook">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="这是关于Amelia飞控的系列笔记的第一篇。这个系列文章针对有一定基础知识，同时希望能够制作自己的四旋翼飞控的朋友。如果你是一个小白，或者在阅读过程中遇到不了解的概念，请充分利用互联网和书本资源。本文主要内容：  Amelia的简单介绍 飞控开发的主要工作 所需知识">
+<meta name="keywords" content="飞控">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Amelia飞控（一）：A Student Guide">
+<meta property="og:url" content="http://yoursite.com/2017/07/22/Amelia飞控（一）：A Student Guide/index.html">
 <meta property="og:site_name" content="林中麦客的Notebook">
+<meta property="og:description" content="这是关于Amelia飞控的系列笔记的第一篇。这个系列文章针对有一定基础知识，同时希望能够制作自己的四旋翼飞控的朋友。如果你是一个小白，或者在阅读过程中遇到不了解的概念，请充分利用互联网和书本资源。本文主要内容：  Amelia的简单介绍 飞控开发的主要工作 所需知识">
+<meta property="og:image" content="http://otfofj1a4.bkt.clouddn.com/drone_a.jpeg">
+<meta property="og:image" content="http://otfofj1a4.bkt.clouddn.com/Amelia_Earhart.jpg">
+<meta property="og:image" content="http://otfofj1a4.bkt.clouddn.com/extern_board.png">
+<meta property="og:image" content="http://otfofj1a4.bkt.clouddn.com/main_baord.png">
+<meta property="og:image" content="http://otfofj1a4.bkt.clouddn.com/moto_board.png">
+<meta property="og:image" content="http://otfofj1a4.bkt.clouddn.com/Amelia.JPG">
+<meta property="og:updated_time" content="2017-07-22T14:04:58.129Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="林中麦客的Notebook">
+<meta name="twitter:title" content="Amelia飞控（一）：A Student Guide">
+<meta name="twitter:description" content="这是关于Amelia飞控的系列笔记的第一篇。这个系列文章针对有一定基础知识，同时希望能够制作自己的四旋翼飞控的朋友。如果你是一个小白，或者在阅读过程中遇到不了解的概念，请充分利用互联网和书本资源。本文主要内容：  Amelia的简单介绍 飞控开发的主要工作 所需知识">
+<meta name="twitter:image" content="http://otfofj1a4.bkt.clouddn.com/drone_a.jpeg">
   
     <link rel="alternative" href="/atom.xml" title="林中麦客的Notebook" type="application/atom+xml">
   
@@ -157,36 +169,79 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Amelia飞控（一）：A Student Guide" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/22/Amelia飞控（一）：A Student Guide/" class="archive-article-date">
-  	<time datetime="2017-07-22T12:07:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-22</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/22/Amelia飞控（一）：A Student Guide/">Amelia飞控（一）：A Student Guide</a>
+    <h1 class="article-title" itemprop="name">
+      Amelia飞控（一）：A Student Guide
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/07/22/Amelia飞控（一）：A Student Guide/" class="archive-article-date">
+  	<time datetime="2017-07-22T12:07:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="http://otfofj1a4.bkt.clouddn.com/drone_a.jpeg" alt="tu"></p>
+<hr>
+<p>这是关于Amelia飞控的系列笔记的第一篇。<br>这个系列文章针对有一定基础知识，同时希望能够制作自己的四旋翼飞控的朋友。<br>如果你是一个小白，或者在阅读过程中遇到不了解的概念，请充分利用互联网和书本资源。<br>本文主要内容：</p>
+<ul>
+<li>Amelia的简单介绍</li>
+<li>飞控开发的主要工作</li>
+<li>所需知识<a id="more"></a>
+</li>
+</ul>
+<h1 id="关于Amelia"><a href="#关于Amelia" class="headerlink" title="关于Amelia"></a>关于Amelia</h1><p>Amelia是出于业余爱好开发的一个开源　轻量级　小型四旋翼飞行控制器。Amelia这个名字是为了向传奇女飞行员Amelia Earhart致敬，Amelia Earhart是历史上第一位飞跃大西洋的女性飞行员。</p>
+<h2 id="Amelia-Earhart"><a href="#Amelia-Earhart" class="headerlink" title="Amelia_Earhart"></a>Amelia_Earhart</h2><p><img src="http://otfofj1a4.bkt.clouddn.com/Amelia_Earhart.jpg" alt="tu"></p>
+<p>Amelia飞控程序使用C语言编写，开发环境为Keil uVision5。PCB使用Altium Designer2017绘制。</p>
+<p>Amelia使用STM32F407C8T6芯片作为中央控制器，使用MPU6050作为加速度/角速度传感器，拥有气压计和电子罗盘，预留了多个串口用于调试，也可以连接GPS模块。同时，Amelia集成了J-Link仿真器，还可通过蓝牙进行无线调试，为了提高空间利用率和功能拓展的灵活性，飞控电路板采用了电子积木式设计。飞控目前只支持PWM接收机。<br>Amelia目前分为三个模块：传感器&amp;I/O拓展模块、主控模块和电调模块。</p>
+<h2 id="传感器拓展模块"><a href="#传感器拓展模块" class="headerlink" title="传感器拓展模块"></a>传感器拓展模块</h2><p><img src="http://otfofj1a4.bkt.clouddn.com/extern_board.png" alt="tu">　</p>
+<h2 id="主控模块"><a href="#主控模块" class="headerlink" title="主控模块"></a>主控模块</h2><p><img src="http://otfofj1a4.bkt.clouddn.com/main_baord.png" alt="tu"></p>
+<h2 id="电调模块"><a href="#电调模块" class="headerlink" title="电调模块"></a>电调模块</h2><p><img src="http://otfofj1a4.bkt.clouddn.com/moto_board.png" alt="tu"></p>
+<h2 id="装机效果"><a href="#装机效果" class="headerlink" title="装机效果"></a>装机效果</h2><p><img src="http://otfofj1a4.bkt.clouddn.com/Amelia.JPG" alt="tu"></p>
+<h1 id="飞控开发主要工作"><a href="#飞控开发主要工作" class="headerlink" title="飞控开发主要工作"></a>飞控开发主要工作</h1><ul>
+<li>硬件选型</li>
+<li>硬件设计</li>
+<li>算法设计</li>
+<li>飞控程序编写</li>
+<li>参数调整</li>
+<li>试飞</li>
+</ul>
+<p>以上工作将在以后的文章中详细介绍。</p>
+<h1 id="所需知识"><a href="#所需知识" class="headerlink" title="所需知识"></a>所需知识</h1><p>如果你希望没有障碍地阅读这个系列文章，并且能够在阅读之后有所收获的话，强烈建议提前掌握以下知识。如果没有接触过请利用网络和书本资源了解。至少做到基本理解。</p>
+<h2 id="硬件"><a href="#硬件" class="headerlink" title="硬件"></a>硬件</h2><ul>
+<li>电路板设计与加工（已有现成PCB文件，可直接送至工厂加工）</li>
+<li>电子元件焊接</li>
+<li>示波器、万用表等工具使用</li>
+</ul>
+<h2 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h2><ul>
+<li>C语言</li>
+<li>Keil集成开发环境的使用</li>
+<li>STM32F4单片机编程</li>
+</ul>
+<h2 id="数学和物理"><a href="#数学和物理" class="headerlink" title="数学和物理"></a>数学和物理</h2><ul>
+<li>基本的牛顿力学</li>
+<li>微积分（对微分积分至少有个概念吧）</li>
+<li>卷积运算（最好学习过　信号与系统　数字信号处理等）</li>
+<li>傅里叶变换、拉普拉斯变换（时域　频域　复频域）</li>
+<li>系统函数、系统响应、单位冲击响应（还是信号与系统之类）</li>
+</ul>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>写这个系列文章的目的是为了方便大家了解Amelia，同时为想自己制作飞控的朋友提供参考。Amelia的代码和设计资料近几天会上传GitHub，希望大家能够提出宝贵的意见和建议。<br>最后，鄙人需要声明：Amelia飞控的代码、PCB文件以及本博客内标题带有Amelia飞控的文章基于CC共享协议发布。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -198,7 +253,7 @@
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -211,66 +266,111 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/07/22/Amelia飞控（一）：A Student Guide/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/22/写给谁谁谁/" class="archive-article-date">
-  	<time datetime="2017-07-22T11:01:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-22</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2017/07/22/写给谁谁谁/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">写给谁谁谁</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/22/写给谁谁谁/">写给谁谁谁</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/折腾/" class="article-tag-list-link color3">折腾</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+
   
   
-    </div></section>
   
 
-    
+  
+  <div id="SOHUCS" sid="Amelia飞控（一）：A Student Guide" ></div> 
+<script type="text/javascript"> 
+(function(){ 
+var appid = "true"; 
+var conf = "true"; 
+var width = window.innerWidth || document.documentElement.clientWidth; 
+if (width < 960) { 
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("//changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+  
+
+  
 
 
           </div>
@@ -301,8 +401,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
