@@ -18,8 +18,9 @@
 <meta property="og:image" content="http://otfofj1a4.bkt.clouddn.com/drone_a.jpeg">
 <meta property="og:image" content="http://otfofj1a4.bkt.clouddn.com/Amelia_GY.JPG">
 <meta property="og:image" content="http://otfofj1a4.bkt.clouddn.com/HC05.png">
+<meta property="og:image" content="http://otfofj1a4.bkt.clouddn.com/jst.JPG">
 <meta property="og:image" content="https://i.creativecommons.org/l/by-sa/4.0/88x31.png">
-<meta property="og:updated_time" content="2017-07-23T13:36:59.515Z">
+<meta property="og:updated_time" content="2017-07-25T08:29:04.901Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Amelia飞控（二）：硬件选型与硬件设计（上）">
 <meta name="twitter:description" content="这里将介绍Amelia的硬件选型和设计过程。本文主要内容：  Amelia的功能构思 Amelia的硬件选型 Amelia的硬件设计">
@@ -234,17 +235,18 @@
 <p><img src="http://otfofj1a4.bkt.clouddn.com/Amelia_GY.JPG" alt="tu"></p>
 <h2 id="蓝牙模块"><a href="#蓝牙模块" class="headerlink" title="蓝牙模块"></a>蓝牙模块</h2><p>不算最便宜但很好用的HC-05蓝牙透传模块，默认为从机模式 波特率9600。可以通过AT指令更改传输模式和波特率。关于AT指令更改HC-05设置请自行搜索。焊盘定义参见下图，来源见水印。</p>
 <p><img src="http://otfofj1a4.bkt.clouddn.com/HC05.png" alt="tu"></p>
-<h2 id="电调-1"><a href="#电调-1" class="headerlink" title="电调"></a>电调</h2><p>Amelia使用好盈乐天BLHeli 20A电调，对于大部分四旋翼飞行器绰绰有余，除非你想将Amelia用于轴距450以上四旋翼飞行器，电调模块都不需要更换。当然，你也可以自己设计新的电调模块以满足个人要求。</p>
+<h2 id="电调-1"><a href="#电调-1" class="headerlink" title="电调"></a>电调</h2><p>Amelia使用好盈乐天BLHeli 20A电调，对于大部分四旋翼飞行器绰绰有余，除非你想将Amelia用于轴距450以上四旋翼飞行器，电调模块都不需要更换。当然，你也可以自己设计新的电调模块以满足个人要求。关于Amelia电调焊接的说明请参见后续文章。</p>
 <hr>
-<h1 id="硬件设计"><a href="#硬件设计" class="headerlink" title="硬件设计"></a>硬件设计</h1><p>Amelia的电路板使用Altium Designer 2017绘制，你也可以将Amelia的PCB文件转移到其他设计软件，具体方法本文不做介绍。设计文件会在近几天公布，你可以将Amelia的PCB文件发给工厂加工或者自己绘制改进。<strong>这里还有几个值得注意的细节：</strong></p>
+<h1 id="硬件设计"><a href="#硬件设计" class="headerlink" title="硬件设计"></a>硬件设计</h1><p>Amelia的电路板使用Altium Designer 2017绘制，你也可以将Amelia的PCB文件转移到其他设计软件，具体方法本文不做介绍。设计文件已经在GitHub发布，你可以将Amelia的PCB文件发给工厂加工或者自己绘制改进。<strong>这里还有几个值得注意的细节：</strong></p>
 <h2 id="丝印"><a href="#丝印" class="headerlink" title="丝印"></a>丝印</h2><p>正如之前提示，Amelia的PCB文件中有不少元件以及焊盘的丝印没有绘制，这会给电路组装工作带来不便，电路具体标示请在设计软件中自行查找，我也会争取尽快添加必要的丝印并更新PCB文件。</p>
-<h2 id="BOM表"><a href="#BOM表" class="headerlink" title="BOM表"></a>BOM表</h2><p>我将尽快整理出Amelia的BOM表并随PCB一起公布，这里需要注意几个特殊零件：</p>
+<h2 id="BOM表"><a href="#BOM表" class="headerlink" title="BOM表"></a>BOM表</h2><p>我已经整理出Amelia的BOM表并随PCB一起公布，这里需要注意几个特殊零件：</p>
 <ul>
 <li>电路板隔离柱使用的是M3直径尼龙柱，长度为5mm，分为双母和一公一母，配合M3尼龙螺丝。</li>
-<li>电路板间电器连接使用1.27mm间距贴片双排母座（塑高4.3mm）和1.27mm间距贴片双排针。</li>
+<li>电路板间电气连接使用1.27mm间距贴片双排母座（塑高4.3mm）和1.27mm间距贴片双排针。</li>
 <li>接收机连接插头使用JST SH 1.00mm 10PIN接线端子，请购买配套插座与插头。</li>
 </ul>
-<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>写这个系列文章的目的是为了方便大家了解Amelia，同时为想自己制作飞控的朋友提供参考。Amelia的代码和设计资料近几天会上传GitHub，希望大家能够顺利地制作出自己的四旋翼飞行器，欢迎大家提出宝贵的意见和建议或对Amelia的代码和硬件设计进行改进。</p>
+<p><img src="http://otfofj1a4.bkt.clouddn.com/jst.JPG" alt="tu"></p>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>写这个系列文章的目的是为了方便大家了解Amelia，同时为想自己制作飞控的朋友提供参考。<br>Amelia的代码和设计资料已经上传GitHub（<a href="https://github.com/Maxwellcatt/Amelia" target="_blank" rel="external">戳这里</a>）。Clone整个Project到本地，用Keil uVision 5打开USER文件夹下的Amelia.uvprojx文件即可开始编辑和编译。希望大家能够顺利地制作出自己的四旋翼飞行器，欢迎大家提出宝贵的意见和建议或对Amelia的代码和硬件设计进行改进。</p>
 <p><strong>声明：Amelia飞控的代码、PCB文件以及本文基于CC知识共享协议</strong> <em>知识共享署名-相同方式共享 4.0 国际许可协议</em> <strong>发布。</strong></p>
 <p> <a rel="external" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a><br>本作品采用<a rel="external" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">知识共享署名-相同方式共享 4.0 国际许可协议</a>进行许可。</p>
 
@@ -340,6 +342,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2017/07/25/Amelia飞控（二）：硬件选型与硬件设计（下）/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Amelia飞控（二）：硬件选型与硬件设计（下）
+        
+      </div>
+    </a>
   
   
     <a href="/2017/07/22/Amelia飞控（一）：A Student Guide/" id="article-nav-older" class="article-nav-link-wrap">
