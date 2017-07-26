@@ -17,7 +17,7 @@
 <meta property="og:description" content="这是Amelia的算法概述。本文主要内容：  姿态解算算法 数字滤波器的设计 控制算法">
 <meta property="og:image" content="http://otfofj1a4.bkt.clouddn.com/drone_a.jpeg">
 <meta property="og:image" content="https://i.creativecommons.org/l/by-sa/4.0/88x31.png">
-<meta property="og:updated_time" content="2017-07-26T11:29:46.770Z">
+<meta property="og:updated_time" content="2017-07-26T11:40:20.917Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Amelia飞控（二）：算法设计（上）">
 <meta name="twitter:description" content="这是Amelia的算法概述。本文主要内容：  姿态解算算法 数字滤波器的设计 控制算法">
@@ -198,15 +198,13 @@
 <h1 id="姿态解算"><a href="#姿态解算" class="headerlink" title="姿态解算"></a>姿态解算</h1><p>Amelia的姿态解算使用了加速度和角速度一阶互补滤波和FIR滤波器，互补滤波结果通过截止频率为80Hz的FIR低通滤波器滤除噪声。关于FIR滤波器的设计请参见后续文章。</p>
 <h2 id="互补滤波"><a href="#互补滤波" class="headerlink" title="互补滤波"></a>互补滤波</h2><p>以下是Amelia所使用的互补滤波代码。</p>
 <pre>
-Fst_Comple_Filter_X(float angle_m, float gyro_m)
-{
-    angle = (1.0 - K1) * angle_m + K1 * (angle + gyro_m * DT);    
-}
+angle_x    = (1.0    - K1) * angleAx    + K1 * (angle_x + gyroGy * DT);
+angle_y    = (1.0    - K1) * angleAy    + K1 * (angle_y + gyroGx * DT);
 </pre> 
 
-<p>angle_m是通过加速度计算得到的机体倾角，计算方法如下：</p>
+<p>angleAx angleAy是通过加速度计算得到的机体倾角，计算方法如下：</p>
 <pre>
-atan2(ax, az) *    57.29577951;
+angleAx = atan2(ax, az) * 57.29577951;
 </pre>
 
 <p>这里只给出了X轴倾角的计算方法。重力加速度在Z方向和X方向的分量的arctan值即为X方向上机身水平面与水平方向的夹角，乘57.29577951是通过弧度换算角度即180/π。</p>
