@@ -17,7 +17,7 @@
 <meta property="og:description" content="这是Amelia的算法概述。本文主要内容：  姿态解算算法 数字滤波器的设计 控制算法">
 <meta property="og:image" content="http://otfofj1a4.bkt.clouddn.com/drone_a.jpeg">
 <meta property="og:image" content="https://i.creativecommons.org/l/by-sa/4.0/88x31.png">
-<meta property="og:updated_time" content="2017-07-26T11:12:13.207Z">
+<meta property="og:updated_time" content="2017-07-26T11:20:21.915Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Amelia飞控（二）：硬件选型与硬件设计（上）">
 <meta name="twitter:description" content="这是Amelia的算法概述。本文主要内容：  姿态解算算法 数字滤波器的设计 控制算法">
@@ -239,6 +239,7 @@ float FIR_Filter_Y(float input)
 </pre>
 
 <p>滤波器序列可由MATLAB进行设计，具体关于FIR滤波器介绍以及MATLAB设计方法请参见后续文章。</p>
+<p>Amelia并没有使用目前主流的四元数姿态解算 + 卡尔曼滤波算法。主要是考虑到该方案在姿态解算的效果上与互补滤波 + FIR滤波器相比并没有显著优势，同时互补滤波 + FIR滤波器更加简洁易懂，对初学者更为友好。你可以在Amelia工程没有使用的部分代码中发现四元数姿态解算 + 卡尔曼滤波，这是Amelia的实验代码，你可在此基础上自由发挥。</p>
 <hr>
 <h1 id="控制算法"><a href="#控制算法" class="headerlink" title="控制算法"></a>控制算法</h1><p>Amelia使用双环PID算法进行控制。外环为角度控制环，通过PI控制器输出角度期望值。内环为角速度控制环，接收外环输出，再通过PID控制器控制飞行器各方向角速度从而控制飞行器姿态。过于PID算法的更多介绍请参见后续文章。</p>
 <hr>
